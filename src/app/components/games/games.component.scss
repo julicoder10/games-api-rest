@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+#ofertas{
+    margin:auto;
+}
+#principal-section{
+    padding-top:200px;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    input{
+        width:600px;
+        height:60px;
+        border:2px solid black;
+    }
+    button{
+        margin-top:20px;
+        padding:20px;
+        
+    }
+}
+h1{
+    font-size:50px;
+    margin-bottom:10px;
+    margin:40px 0px 40px 0px;
+    color:white;
+}
+
+#section-filtrados{
+    display:flex;
+    gap:50px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#cards{
+    display:flex;
+    gap:50px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card{
+    width:300px;
+    border:2px solid white;
+    border-radius:10px;
+    text-align: center;
+    padding:20px;
+    color:white;
+    background-color: black;
+    .img-card{
+        width:200px;
+        height:150px;
+    }
+}

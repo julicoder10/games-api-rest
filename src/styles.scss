@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}   
+body{
+    background-image: url(../src/assets/1062064.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:0 -75%;
+}
+
+
+@import "../node_modules/bulma/bulma.sass";

@@ -1,0 +1,25 @@
+
+<section id="principal-section">
+    <h1>Game Deals</h1>
+    <input type="text" placeholder="Search game" [(ngModel)]="tituloDeJuego" class="input is-rounded">
+    <button (click)="buscarJuego()" class="button is-dark is-medium">Search</button>
+    <section *ngIf="juegosFiltrados" id="section-filtrados">
+        <div *ngFor="let juegoFiltrado of juegosFiltrados" class="card">
+            <img src="{{this.juegoFiltrado.thumb}}" class="img-card">
+            <h2>Name: {{this.juegoFiltrado.external}}</h2>
+            <h2>Normal Price: ${{this.juegoFiltrado.cheapest}}</h2>
+        </div>
+    </section>
+</section>
+
+<h1 id="ofertas">Ofertas</h1>
+
+<section id="cards">
+        <div *ngFor="let juego of games" class="card">
+            <img src="{{this.juego.thumb}}" class="img-card">
+            <p> <strong>Name:</strong> {{this.juego.title}}</p>
+            <p><strong>Normal Price:</strong> ${{this.juego.normalPrice}}</p>
+            <p><strong>Store ID :</strong> {{this.juego.storeID}}</p>
+            <p><strong>Deal Rating:</strong> {{this.juego.dealRating}}</p>
+        </div>
+</section>
